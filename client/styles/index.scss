@@ -4,3 +4,13 @@ html,
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+.container {
+  flex-direction: row;
+  align-items: center;
+}
+
+.content{
+  align-items: center;
+  text-align: center;
+}
