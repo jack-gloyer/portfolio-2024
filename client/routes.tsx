@@ -10,7 +10,7 @@ import Home from './pages/Home'
 export const routes = createRoutesFromElements(
   <Route path="/" element={<App />}>
     <Route index element={<Home />} />
-    <Route path="about" element={<AboutMe />}></Route>
+    <Route path="/about" element={<AboutMe />}></Route>
   </Route>,
 )
 

@@ -4,9 +4,9 @@ import Nav from './Nav.tsx'
 function App() {
   return (
     <>
-      <div className="content">
+      <div className="container">
         <Nav />
-        <div className="container">
+        <div className="content">
           <Outlet />
         </div>
       </div>

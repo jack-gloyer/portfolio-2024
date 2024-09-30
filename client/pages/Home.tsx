@@ -1,13 +1,31 @@
+import { Project } from '../../models/projects'
 import About from '../components/About'
-import Projects from '../components/Projects'
+import ProjectCard from '../components/dumb/ProjectCard'
+import Footer from '../components/Footer'
+import useProjects from '../hooks/useProjects'
 
 function Home() {
+  const { data: projects, isLoading, isError } = useProjects()
+
+  if (isLoading) return <p>loading..</p>
+  if (isError) return <p>not found</p>
+
   return (
     <div className="content">
-      <h1>This is my portfolio</h1>
-      <h2>About Me</h2>
+      <h1>Jack Gloyer&#39;s Portfolio</h1>
       <About />
-      <Projects />
+      <h2>Projects</h2>
+      {projects?.map((project: Project) => (
+        <div className="cardContainer" key={project.id}>
+          <ProjectCard
+            name={project.name}
+            link={project.link}
+            description={project.description}
+            logo={project.logo}
+          />
+        </div>
+      ))}
+      <Footer />
     </div>
   )
 }

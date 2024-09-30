@@ -7,14 +7,49 @@ body {
   color:white;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a:hover, a:active {
+  color: chartreuse;
+}
+
 .container {
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .content{
   align-items: center;
   text-align: center;
+
+}
+
+.aboutContent{
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.projectImg{
+  width:25%;
+  height:25%;
+}
+
+.cardContainer{
+  color: white;
+  
 }
 
 .nav{
@@ -22,12 +57,16 @@ body {
   text-align: center;
   display: flex;
   justify-content: center;
+  padding-bottom: 2rem;
+  padding-top: 3rem;
 }
-
-/* CSS */
+.line{
+  padding-top: 3rem;
+  border-bottom: 1px solid #888;
+}
 .navButton {
   align-items: center;
-  background-color: #fee6e3;
+  background-color: grey;
   border: 2px solid #111;
   border-radius: 8px;
   box-sizing: border-box;
@@ -69,7 +108,7 @@ body {
 }
 
 .navButton:active {
-  background-color: #ffdeda;
+  background-color: silver;
   outline: 0;
 }
 
@@ -80,5 +119,8 @@ body {
 @media (min-width: 768px) {
   .navButton {
     padding: 0 40px;
+  }
+  .container{
+    padding-left: 0.5rem
   }
 }
