@@ -1,6 +1,5 @@
 import { Outlet } from 'react-router-dom'
 import Nav from './Nav.tsx'
-import Home from '../pages/Home.tsx'
 
 function App() {
   return (
@@ -9,7 +8,6 @@ function App() {
         <Nav />
         <div className="container">
           <Outlet />
-          <Home />
         </div>
       </div>
     </>

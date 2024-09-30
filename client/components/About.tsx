@@ -8,11 +8,12 @@ function About() {
       </p>
       <p>
         Looking for my first opportunity working in the tech industry and to put
-        my new skills to the test
+        my new skills as a full-stack software developer to the test!
       </p>
       <p>
         I want to learn as much as possible about coding, and hope to pick up
-        heaps of new skills from collaborative team based project work
+        heaps of new skills from collaborative team based project work Read more
+        about me in the about section!
       </p>
     </div>
   )

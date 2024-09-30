@@ -1,5 +1,5 @@
 export async function up(knex) {
-  return knex.schema.createTable('fruit', (table) => {
+  return knex.schema.createTable('projects', (table) => {
     table.increments('id')
     table.string('name')
     table.string('logo')
@@ -9,5 +9,5 @@ export async function up(knex) {
 }
 
 export async function down(knex) {
-  return knex.schema.dropTable('fruit')
+  return knex.schema.dropTable('projects')
 }
