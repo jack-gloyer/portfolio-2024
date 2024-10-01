@@ -9,7 +9,7 @@ export async function seed(knex) {
       name: 'pawpals',
       logo: 'pawpals.png',
       description:
-        'A meetup site based around pets, create your personal account and set up pet profiles, create events and attend!',
+        'Fullstack, part of a 5 person final group project. Uses Tailwind, React, SQLite, extensive testing and collaborative effort. My part in this team was GitLead',
       link: 'https://pawpals.pushed.nz/',
     },
     {
@@ -17,15 +17,16 @@ export async function seed(knex) {
       name: 'snakes on a garlic',
       logo: 'snakeGarlic.png',
       description:
-        'One of our single day projects from Dev, with only about 8 hours to plan, code and present, we made a movie suggestor with a haunted theme.',
+        'Friday single day project - 8 hrs total to complete in a team of 5. This project showcases API calls and our first week using proper backend.',
       link: 'https://github.com/matai-2024/Snakes-on-a-garlic',
     },
     {
       id: 3,
       name: 'todo fullstack',
       logo: 'todo.png',
-      description: 'a basic fullstack todo list',
-      link: 'https://github.com/matai-2024/Snakes-on-a-garlic',
+      description:
+        'A small fullstack todo app. Needs some more styling, but everything functions!',
+      link: 'https://jack-matai24-todos.devacademy.nz/',
     },
   ])
 }

@@ -17,9 +17,24 @@ function About() {
           heaps of new skills from collaborative team based project work.
         </p>
         <p>
-          Read more about me, the skills I have and the skills I want to
-          learn/am learning in the about section!
+          Dev Academy has taught me a fullstack base of React.js, TypeScript,
+          SQLite (Knex), Express, Superagent & Supertest.
+          <br></br> I want to upskill myself and learn C, C#, Node.js, Java,
+          Python, and .NET core.
+          <p>
+            Currently during my job search I am working on a personal project to
+            inspire ideas from future Dev Academy students with their Friday
+            Projects, The Idea Fusioner (WEBAPP).
+            <br></br> I am also studying CS50x from Harvard and Understanding
+            Node.js.
+          </p>
         </p>
+        <a
+          href="docs/Jack_Gloyer_Resume_(2024).pdf"
+          download="JackGloyer_Resume"
+        >
+          <button className="button-80">Download My CV</button>
+        </a>
       </div>
     </div>
   )

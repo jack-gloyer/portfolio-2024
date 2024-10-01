@@ -4,19 +4,20 @@ function Nav() {
   return (
     <header>
       <nav className="nav">
-        <button className="navButton">
-          <Link to="/">Home</Link>
-        </button>
-        <button className="navButton">
-          <Link to="/about">About</Link>
-        </button>
-        <button className="navButton">
-          <Link to="https://github.com/jack-gloyer">Github </Link>
-        </button>
-        <button className="navButton">
-          <Link to="https://www.linkedin.com/in/jack-gloyer/">Linkedin </Link>
-        </button>
+        <Link to="/">
+          <button className="button-80">Home</button>
+        </Link>
+        <Link to="/about">
+          <button className="button-80">About</button>
+        </Link>
+        <Link to="https://github.com/jack-gloyer">
+          <button className="button-80">Github</button>
+        </Link>
+        <Link to="https://www.linkedin.com/in/jack-gloyer/">
+          <button className="button-80">Linkedin</button>
+        </Link>
       </nav>
+      <div className="horizLine"></div>
     </header>
   )
 }

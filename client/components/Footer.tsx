@@ -1,9 +1,12 @@
 function Footer() {
   return (
-    <div className="footer">
-      <div className="line"></div>
-      <p>Contact Me</p>
-    </div>
+    <>
+      <div className="horizLine"></div>
+      <div className="footer">
+        <p>Further enquires: </p>
+        <p>&nbsp;&nbsp;jackgloyer8@gmail.com</p>
+      </div>
+    </>
   )
 }
 
