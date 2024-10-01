@@ -11,3 +11,9 @@ export async function getAllProjects(db = connection): Promise<Project[]> {
   )
   return projects
 }
+
+export async function getProjectById(id: number): Promise<Project> {
+  const project = connection('projects').where({ id }).select('*').first()
+
+  return project
+}

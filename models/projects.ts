@@ -3,6 +3,7 @@ export default interface ProjectData {
   logo: string
   description: string
   link: string
+  route: string
 }
 
 export interface Project extends ProjectData {

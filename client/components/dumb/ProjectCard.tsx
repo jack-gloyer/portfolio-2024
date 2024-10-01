@@ -10,11 +10,11 @@ interface Props {
 const ProjectCard: React.FC<Props> = ({ name, logo, description, link }) => (
   <div className="cardContainer">
     <Link to={`${link}`}>
-      <h2>{name}</h2>
-      <p>{description}</p>
       <div className="projectImg">
         <img src={`imgs/${logo}`} alt=""></img>
       </div>
+      <h2>{name}</h2>
+      <p>{description}</p>
     </Link>
   </div>
 )

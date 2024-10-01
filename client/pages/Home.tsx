@@ -4,10 +4,10 @@ import ProjectCard from '../components/dumb/ProjectCard'
 import Footer from '../components/Footer'
 import Picture from '../components/Picture'
 import useProjects from '../hooks/useProjects'
+import projectList from '../components/projectsList'
 
 function Home() {
-  const { data: projects, isLoading, isError } = useProjects()
-
+  const { isLoading, isError } = useProjects()
   if (isLoading) return <p>loading..</p>
   if (isError) return <p>not found</p>
 
@@ -19,7 +19,7 @@ function Home() {
         <About />
       </div>
       <h2>Projects</h2>
-      {projects?.map((project: Project) => (
+      {projectList?.map((project: Project) => (
         <div className="cardContainer" key={project.id}>
           <ProjectCard
             name={project.name}

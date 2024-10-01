@@ -6,12 +6,10 @@ body {
   background-color: black;
   color:white;
 }
-
 img {
   max-width: 100%;
   height: auto;
 }
-
 a{
   color: white;
   text-decoration: none;
@@ -19,23 +17,19 @@ a{
   flex-direction: column;
   align-items: center;
 }
-
 a:hover, a:active {
   color: chartreuse;
 }
-
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .content{
   align-items: center;
   text-align: center;
 
 }
-
 .aboutContent{
   align-items: center;
   text-align: center;
@@ -50,9 +44,9 @@ a:hover, a:active {
 .projectImg{
   width:25%;
   height:25%;
+  padding-right: 2rem;
 }
 
-/* CSS */
 .button-80 {
   background: grey;
   backface-visibility: hidden;
@@ -78,20 +72,16 @@ a:hover, a:active {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-
 .button-80:not(:disabled):hover {
   color: chartreuse;
   transform: scale(1.05);
 }
-
 .button-80:not(:disabled):hover:active {
   transform: scale(1.05) translateY(.125rem);
 }
-
 .button-80:focus {
   outline: 0 solid transparent;
 }
-
 .button-80:focus:before {
   content: "";
   left: calc(-1*.375rem);
@@ -101,15 +91,12 @@ a:hover, a:active {
   transition: border-radius;
   user-select: none;
 }
-
 .button-80:focus:not(:focus-visible) {
   outline: 0 solid transparent;
 }
-
 .button-80:focus:not(:focus-visible):before {
   border-width: 0;
 }
-
 .button-80:not(:disabled):active {
   transform: translateY(.125rem);
 }
@@ -132,18 +119,21 @@ a:hover, a:active {
   text-align: center;
   display: flex;
   justify-content: center;
-  padding-bottom: 2rem;
   padding-top: 3rem;
 }
 .horizLine{
   padding-top: 3rem;
   border-bottom: 1px solid #888;
 }
-
+.headshot{
+  display: flex;
+  flex-direction: column;
+}
 
 @media (min-width: 768px) {
- 
+  
   .container{
-    padding-left: 0.5rem
+    padding-left: 0.5rem;
+    flex-direction: column;
   }
 }
