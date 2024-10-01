@@ -10,10 +10,10 @@ function Nav() {
         <Link to="/about">
           <button className="button-80">About</button>
         </Link>
-        <Link to="https://github.com/jack-gloyer">
+        <Link to="https://github.com/jack-gloyer" target="_blank">
           <button className="button-80">Github</button>
         </Link>
-        <Link to="https://www.linkedin.com/in/jack-gloyer/">
+        <Link to="https://www.linkedin.com/in/jack-gloyer/" target="_blank">
           <button className="button-80">Linkedin</button>
         </Link>
       </nav>
