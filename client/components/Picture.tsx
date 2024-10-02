@@ -1,7 +1,7 @@
 function Picture() {
   return (
     <div className="projectImg">
-      <img src={`imgs/me.png`} alt=""></img>
+      <img src={`public/me.png`} alt=""></img>
     </div>
   )
 }

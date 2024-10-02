@@ -2,7 +2,6 @@ function About() {
   return (
     <div className="content">
       <div className="aboutContent">
-        <h2>About Me</h2>
         <p>Kia ora! My name is Jack</p>
         <p>
           I&#39;m a Vancouver Island born, Waiheke Island grown grad from Dev
@@ -29,12 +28,6 @@ function About() {
             Node.js.
           </p>
         </p>
-        <a
-          href="docs/Jack_Gloyer_Resume_(2024).pdf"
-          download="JackGloyer_Resume"
-        >
-          <button className="button-80">Download My CV</button>
-        </a>
       </div>
     </div>
   )

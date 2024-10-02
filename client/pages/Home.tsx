@@ -2,6 +2,7 @@ import { Project } from '../../models/projects'
 import About from '../components/About'
 import ProjectCard from '../components/dumb/ProjectCard'
 import Footer from '../components/Footer'
+import PdfDownload from '../components/PdfDownload'
 import Picture from '../components/Picture'
 // import useProjects from '../hooks/useProjects'
 import projectList from '../components/projectsList'
@@ -14,10 +15,12 @@ function Home() {
   return (
     <div className="content">
       <h1>Jack Gloyer&#39;s Portfolio</h1>
+      <h2>About Me</h2>
       <div className="blurb">
         <Picture />
         <About />
       </div>
+      <PdfDownload />
       <h2>Projects</h2>
       {projectList?.map((project: Project) => (
         <div className="cardContainer" key={project.id}>
