@@ -11,7 +11,7 @@ const ProjectCard: React.FC<Props> = ({ name, logo, description, link }) => (
   <div className="cardContainer">
     <Link to={`${link}`}>
       <div className="projectImg">
-        <img src={`public/${logo}`} alt=""></img>
+        <img src={`${logo}`} alt=""></img>
         <h2>{name}</h2>
         <p>{description}</p>
       </div>
