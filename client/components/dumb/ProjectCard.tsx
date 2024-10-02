@@ -12,9 +12,9 @@ const ProjectCard: React.FC<Props> = ({ name, logo, description, link }) => (
     <Link to={`${link}`}>
       <div className="projectImg">
         <img src={`imgs/${logo}`} alt=""></img>
+        <h2>{name}</h2>
+        <p>{description}</p>
       </div>
-      <h2>{name}</h2>
-      <p>{description}</p>
     </Link>
   </div>
 )

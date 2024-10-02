@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { useProjectsById } from '../hooks/useProjects'
 import projectList from '../components/projectsList'
 import { Project } from '../../models/projects'
@@ -14,12 +14,18 @@ function ProjectInfo() {
   if (project) return
   ;<div className="content">
     {projectList.map((project: Project) => (
-      <div key={project.id} className="projectInfo">
+      <div key={project.id} className="projectDetails">
         <h1>{project.name}</h1>
+        <h2>Deployed? {project.deployed ? 'Y' : 'N'}</h2>
         <div className="projectImg">
           <img src={`imgs/${project.logo}`} alt=""></img>
         </div>
         <p>{project.description}</p>
+        <Link to={`${project.link}`}>
+          <button className="button-80">
+            Link to {project.deployed ? 'deployed site' : 'source code'}
+          </button>
+        </Link>
       </div>
     ))}
   </div>

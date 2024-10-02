@@ -4,6 +4,7 @@ export default interface ProjectData {
   description: string
   link: string
   route: string
+  deployed: boolean
 }
 
 export interface Project extends ProjectData {
